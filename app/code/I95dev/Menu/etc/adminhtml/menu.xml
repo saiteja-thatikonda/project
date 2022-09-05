@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+
+    <menu>
+
+        <add id="I95dev_Menu::menu" title="Custom Menu" module="I95dev_Menu" sortOrder="30"  resource="Magento_Backend::content"/>
+        
+        <add id="I95dev_Menu::menu_item" title=" I95dev" module="I95dev_Menu" sortOrder="30"  parent="I95dev_Menu::menu" resource="I95dev_Menu::menu_item" action="menu/index"/>
+
+    </menu>
+
+</config>
+
+

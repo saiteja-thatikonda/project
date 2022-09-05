@@ -1,0 +1,24 @@
+<?php
+use \Magento\Framework\App\Bootstrap;
+echo 'code by harshvardhanmalpani';
+include('/var/www/html/244magento/app/bootstrap.php');
+$bootstrap = Bootstrap::create(BP, $_SERVER);
+$objectManager = $bootstrap->getObjectManager();
+ 
+function createCategory($a='',$b=2,$c=true,$d='',$e='',$f='',$g='') {
+        global $objectManager;
+        $category = $objectManager->get('\Magento\Catalog\Model\CategoryFactory')->create();
+        $category->setName($a);
+        $category->setParentId($b); // 1: root category.
+        $category->setIsActive($c);
+        $category->setCustomAttributes([
+'description' => $d,
+'meta_title' => $e,
+'meta_keywords' => $f,
+ 'meta_description' => $g,
+     ]);
+        $objectManager->get('\Magento\Catalog\Api\CategoryRepositoryInterface')->save($category);
+}
+createCategory("Abc");
+createCategory("Xyz",4,false,"description","m title");
+?>

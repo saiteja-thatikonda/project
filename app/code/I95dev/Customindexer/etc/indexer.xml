@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Indexer/etc/indexer.xsd">
+    <indexer id="i95dev_customindexer_indexer" view_id="i95dev_customindexer_indexer" class="I95dev\Customindexer\Model\Indexer\CustomIndexer" shared_index="i95dev_customindexer_indexer">
+        <title translate="true">I95dev Custom Indexer Title</title>
+        <description translate="true"> sai teja  Custom Indexer Description</description>
+    </indexer>
+</config>

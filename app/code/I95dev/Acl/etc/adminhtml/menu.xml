@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+     <add id="I95dev_Acl::menu" title="Acl rule " module="I95dev_Acl" sortOrder="10" resource="Magento_Backend::content"/>
+     <add id="I95dev_Acl::create" title="Create" module="I95dev_Acl" sortOrder="10" parent="I95dev_Acl::menu" action="acl/create/index" resource="I95dev_Acl::create"/>
+     <add id="I95dev_Acl::delete" title="Delete" module="I95dev_Acl" sortOrder="20" parent="I95dev_Acl::menu" action="acl/delete/index" resource="I95dev_Acl::delete"/>
+     <add id="I95dev_Acl::view" title="View" module="I95dev_Acl" sortOrder="30" parent="I95dev_Acl::menu" action="acl/view/index" resource="I95dev_Acl::view"/>
+    </menu>
+</config>      

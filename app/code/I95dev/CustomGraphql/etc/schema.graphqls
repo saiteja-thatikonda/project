@@ -1,0 +1,15 @@
+#Magento Customer GraphQl Schema
+
+
+type Query {
+testcustomer(
+email: String @doc(description: “Id of the customer”)
+): Testcustomer @resolver(class: “I95dev\\CustomGraphql\\Model\\Resolver\\Customer”) @doc(description:
+“The testcustomer query returns information about a customer”)
+}
+type Testcustomer @doc(description: “Testcustomer defines the customer name and other details”) {
+entity_id: Int
+ firstname: String
+ lastname: String
+email: String
+}
